@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DeWeb</title>
+		
+		<!--STYLES-->
+		<link rel="stylesheet" href="/styles/auxiliar.css">
+		<link rel="stylesheet" href="/styles/bootstrap.css">
+		<link rel="stylesheet" href="/styles/importer.css">
+		<!--STYLES END-->
+	</head>
+	<body ng-app="HomepageModule" ng-controller="HomepageController" background="/images/background.jpg">
+		<nav class="navbar navbar-default ">
+			<div>
+				<a class="navbar-brand" href="/#" >DeWeb - Connecting people
+				</a>
+				
+				<form ng-submit="submitLoginForm()" class="navbar-form navbar-right">
+					<div class="form-group">
+						<input ng-model="loginForm.email" type="text" placeholder="Seu email" name="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input ng-model="loginForm.password" type="password" placeholder="Senha" name="password" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success btn-login">
+						Entrar
+					</button>
+				</form>
+			</div>
+		</nav>
+		<div >
+			
+				<!--FORMULARIO DE CADASTRO-->
+			<form ng-submit="submitSignupForm()" id="sign-up-form" class="form-signin" name="signup">
+					<h2 class="form-signin-heading">Crie sua conta</h2>
+				<div class="row">
+					<!-- N O M E -->
+					<div class="control-group form-group col-md-12">
+						<label>Seu nome completo</label>
+						<input class="form-control" type="text" ng-maxlength="50" name="nome" ng-model="cadastro.nome" required>
+					</div>
+					<!-- E M A I L -->
+					<div class="control-group form-group col-md-12">
+						<label>Seu email</label>
+						<input class="form-control" type="email" name="email" ng-model="cadastro.email" required>
+					</div>
+					<!-- S E N H A -->
+					<div class="control-group form-group col-md-6">
+						<label>Senha</label>
+						<input class="form-control" type="password" name="senha" ng-model="cadastro.senha" required>
+					</div>
+					<!-- C O N F I M A R  S E N H A -->
+					<div class="control-group form-group col-md-6">
+						<label>Confirme sua senha</label>
+						<input class="form-control" type="password" name="confirma" ng-model="cadastro.confirma" required>
+					</div>
+					<!-- E N V I A R -->
+					<div>
+						<button class="btn btn-primary btn-md btn-block" type="submit">Enviar</button>
+					</div>
+				</div>
+			</form>
+				<div class="control-group form-group row-md-3"></div>
+				
+		</div>
+		
+		<div class="container">
+			<hr>
+			<footer class="footer pull-center">
+				<div>
+					<p style="text-align: center; color:white;">DeWeb &copy; Desenvolvido pro Duglas Tinoco e Mateus Cardoso </p>
+				</div>
+			</footer>
+		</div>
+		
+		<!--SCRIPTS-->
+		<script src="/js/dependencies/sails.io.js"></script>
+		<script src="/js/dependencies/angular.js"></script>
+		<script src="/js/public/homepage/HomepageModule.js"></script>
+		<script src="/js/public/homepage/HomepageController.js"></script>
+		<!--SCRIPTS END-->
+	</body>
+</html>

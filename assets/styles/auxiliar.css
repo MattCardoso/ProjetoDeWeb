@@ -1,0 +1,51 @@
+.jumbotron{
+
+	text-align: center;
+	margin: 0px 20px 20px 60px;
+	padding:0px 0px 0px 0px;
+	font-family: sans-serif;
+	background-color: transparent;
+	/*color: white;*/
+	
+}
+.form-signin {
+position: relative;
+max-width: 40%;
+padding: 0px 0px 0px;
+margin: auto auto auto auto;
+color:white;
+}
+
+.navbar{
+	border-color: transparent;
+	background-color: transparent;
+	max-width: 98.5%;
+}
+.navbar .navbar-brand{
+	font-style: normal;
+	color:white;
+}
+
+.footer{
+	
+	color:white;
+	text-align: center;
+}
+
+.btn-block{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#titulo{
+	color: white;
+	margin-left: 85%;
+	font-family: sans-serif;
+	/*font-variant: small-caps;*/
+}
+
+#login {
+	width: 12%;
+	margin-left: 85%;
+	margin-top: 2px;
+}
